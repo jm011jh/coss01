@@ -1,0 +1,57 @@
+$blue : #0057FF;
+$red : #FF003B;
+$dark : #121619;
+$slateGrey : #656A71;
+$lightGreyBlue : #A8B2bF;
+$paleGrey : #E9EAED;
+$white : #dddddd;
+$grey01 : #959aa0;
+
+.input-row:not(:last-child){margin-bottom: 16px;}
+.input-box{padding: 12px;display: flex;flex-direction: column;justify-content: flex-start;align-items: flex-start;border: 1px solid $white;border-radius: 6px;position:relative;
+    input{border: none;border-radius: 0px;width: 100%;padding: 4px 4px;}
+    input:focus{border: 0px solid #000;outline: none;}
+    input:active{border: none;}
+    input, .input-box label{display: block;}
+    label{font-size: 12px;color: #aaaaaa;padding-left: 4px;}
+}
+input.login--go{font-size: 16px;color: #fff;background-color: $blue;border-radius: 6px;width: 100%;padding: 22px 0;font-weight: 400;cursor: pointer;outline: none;border: 0px solid #000;line-height: 1;}
+input.login--go:focus{outline: none;}
+.input-box.focused{border: 1px solid $blue;}
+
+.input-row2{margin-bottom: 54px;display: flex;justify-content: space-between;align-items:center;letter-spacing:-0.2px;
+    a{line-height: 1;text-decoration: underline;}
+    input[type=checkbox]{position: absolute;opacity: 0;cursor: pointer;height: 0;width: 0;}
+    .checkmark{display: flex;align-items: center;}
+    .checkmark p{margin-left: 6px;}
+    .checkmark span{width: 20px;height: 20px;border-radius: 50%;border: 1px solid $grey01;cursor: pointer;position: relative;display: block;}
+    .checkmark span:after{content: "";position: absolute;width: 4px;height: 8px;border: solid #fff;border-width: 0 2px 2px 0;transform: translate(-50%,-60%)rotate(45deg) ;top: 50%;left: 50%;}
+    input[type=checkbox]:checked ~ .checkmark span{background-color: $blue;border: 1px solid $blue;}
+}
+
+.input-password-switch{width: 44px;height: 44px;position: absolute;right: 12px;top: 50%;transform: translate(0,-50%);}
+.input-password-switch img{width:100%;position: absolute;top: 50%;left: 50%;transform: translate(-50%,-50%);}
+.input-password-switch-close{display: block;}
+.activate .input-password-switch-close{display: none;}
+.input-password-switch-open{display: none;}
+.activate .input-password-switch-open{display: block;}
+
+
+.input-error{display: none;align-items: center;color: $red;font-size: 12px;margin-top: 8px;}
+.error-now .input-error{display: flex;}
+.error-now .input-box.focused{border: 1px solid $red;}
+.error-now .input-box{border: 1px solid $red;}
+.error-now .input-box label{color: $red;}
+.input-error img{width: 16px;height: 16px;margin-right: 4px;}
+
+.login--sns-login{display: flex;margin-top: 20px;}
+.login--sns-login-button{width: calc(50% - 10px);border: 1px solid $white;border-radius: 6px;display: flex;justify-content: space-between;align-items: center;padding:3px 18px 3px 6px;}
+.login--sns-login-button img{width: 40px;}
+.login--sns-login-button:first-child{margin-right: 20px;}
+
+.login--join-title{width: 100%;position: relative;text-align: center;display: flex;justify-content: center;align-items: center;margin-top: 20px;}
+.login--join-title p{color: $lightGreyBlue;position: relative;padding: 0 15px;background-color: #fff;}
+.login--join-title span{position: absolute;top: 50%;left: 50%;transform: translate(-50%,-50%);width: 100%;height: 1px;background-color: $lightGreyBlue;}
+
+.login--join-go{width: 100%;border-radius: 6px;border: 1px solid $blue;color: $blue;font-size: 16px;text-align: center;margin-top: 25px;}
+.login--join-go a{width: 100%;padding: 22px 0;display: block;}

@@ -1,0 +1,31 @@
+$blue : #0057FF;
+$red : #FF003B;
+$dark : #121619;
+$slateGrey : #656A71;
+$lightGreyBlue : #A8B2bF;
+$paleGrey : #E9EAED;
+$white : #dddddd;
+$grey01 : #959aa0;
+
+.login--container{padding: 230px 0;}
+.login--wrap{width: 100%;max-width: 400px;margin: auto;}
+.member--title{text-align: center;margin-bottom: 65px;}
+.member--title p.fontSize01{font-weight: 700;margin-bottom: 18px;letter-spacing: -0.2px;}
+.member--title p.fontSize02{color: $slateGrey;letter-spacing: -0.25px;}
+
+.input-box{padding: 12px;display: flex;flex-direction: column;justify-content: flex-start;align-items: flex-start;border: 1px solid $white;border-radius: 6px;position:relative;
+    input{border: none;border-radius: 0px;width: 100%;padding: 4px 4px;}
+    input:focus{border: 0px solid #000;outline: none;}
+    input:active{border: none;}
+    input, .input-box label{display: block;}
+    label{font-size: 12px;color: #aaaaaa;padding-left: 4px;}
+}
+.input-box.focused{border: 1px solid $blue;}
+.input-password-switch{width: 44px;height: 44px;position: absolute;right: 12px;top: 50%;transform: translate(0,-50%);}
+.input-password-switch img{width:100%;position: absolute;top: 50%;left: 50%;transform: translate(-50%,-50%);}
+.input-password-switch-close{display: block;}
+.activate .input-password-switch-close{display: none;}
+.input-password-switch-open{display: none;}
+.activate .input-password-switch-open{display: block;}
+
+.input-error{letter-spacing: -0.24px;}

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/public.css">
+    <link rel="stylesheet" href="/css/member.css">
+    <link rel="stylesheet" href="/css/join.css">
+</head>
+<body>
+    <div id="container">
+        <div id="content">
+            <div class="login--container">
+                <div class="public--wrap">
+                    <div class="join--wrap">
+                        <div class="member--title">
+                            <p class="fontSize01">회원가입</p>
+                            <p class="fontSize02">2022 산학협력 EXPO 사이트를 이용하기 위한 회원가입을 완료해주세요.</p>
+                        </div>
+                        <form action="">
+                            <div class="input--section">
+                                <div class="input--section-title">기본 정보 <span>필수입력</span></div>
+                                <div class="input--subject">
+                                    <div class="input-row error-now">
+                                        <div class="input-subject-title"><p>아이디</p></div>
+                                        <div class="input-box input400">
+                                            <label for="userId">아이디</label>
+                                            <input id="userId" type="text" name="userId" placeholder="">
+                                        </div>
+                                    </div>
+                                    <div class="input-error">
+                                        <img src="/img/input_error.png" alt="">
+                                        <p>아이디를 입력해주세요.</p>
+                                    </div>
+                                </div>
+                                <div class="input--subject">
+                                    <div class="input-row input-password error-now">
+                                        <div class="input-subject-title"><p>비밀번호</p></div>
+                                        <div class="input-box input400">
+                                            <label for="userPw">재설정 시 입력 / 6~10자의 영문과 숫자 조합</label>
+                                            <input id="userPw" type="password" name="userPw" placeholder="">
+                                            <div id="pwSwitch" class="input-password-switch">
+                                                <img class="input-password-switch-close" src="/img/password_eye_close.png" alt="">
+                                                <img class="input-password-switch-open" src="/img/password_eye_open.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="input-error">
+                                        <img src="/img/input_error.png" alt="">
+                                        <p>비밀번호를 입력해주세요.</p>
+                                    </div>
+                                </div>
+                                <div class="input--subject">
+                                    <div class="input-row input-password error-now">
+                                        <div class="input-subject-title"><p>비밀번호 확인</p></div>
+                                        <div class="input-box input400">
+                                            <label for="userPwRe">6~10자의 영문과 숫자 조합</label>
+                                            <input id="userPwRe" type="password" name="userPwRe" placeholder="">
+                                            <div id="pwSwitchRe" class="input-password-switch">
+                                                <img class="input-password-switch-close" src="/img/password_eye_close.png" alt="">
+                                                <img class="input-password-switch-open" src="/img/password_eye_open.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="input-error">
+                                        <img src="/img/input_error.png" alt="">
+                                        <p>비밀번호가 일치하지 않습니다.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="input--section">
+                                <div class="input--section-title">담당자 정보</div>
+                                <div class="input--subject">
+                                    <div class="input-row error-now">
+                                        <div class="input-subject-title"><p>담당자 이름</p></div>
+                                        <div class="input-box input400">
+                                            <label for="chargerId">담당자 이름</label>
+                                            <input id="chargerId" type="text" name="chargerId" placeholder="">
+                                        </div>
+                                    </div>
+                                    <div class="input-error">
+                                        <img src="/img/input_error.png" alt="">
+                                        <p>이름을 입력해주세요.</p>
+                                    </div>
+                                </div>
+                                <div class="input--subject">
+                                    <div class="input-row">
+                                        <div class="input-subject-title"><p>담당자 직책</p></div>
+                                        <div class="input-box input400">
+                                            <label for="chargerLevel">담당자 직책</label>
+                                            <input id="chargerLevel" type="text" name="chargerLevel" placeholder="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="input--subject">
+                                    <div class="input-row">
+                                        <div class="input-subject-title"><p>담당자 부서</p></div>
+                                        <div class="input-box input400">
+                                            <label for="chargerPart">담당자 부서</label>
+                                            <input id="chargerPart" type="text" name="chargerPart" placeholder="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="input--subject">
+                                    <div class="input-row">
+                                        <div class="input-subject-title"><p>담당자 연락처</p></div>
+                                        <div class="input-box input400">
+                                            <label for="chargerNum">담당자 연락처</label>
+                                            <input id="chargerNum" type="text" name="chargerNum" placeholder="">
+                                        </div>
+                                    </div>
+                                    <div class="input-error">
+                                        <img src="/img/input_error.png" alt="">
+                                        <p>담당자 연락처를 입력해주세요.</p>
+                                    </div>
+                                </div>
+                                <div class="input--subject">
+                                    <div class="input-row2">
+                                        <div class="input-subject-title"><p>담당자 이메일</p></div>
+                                        <div class="input-row input-row-email error-now">
+                                            <div class="input-box">
+                                                <input id="chargerEmail" type="text" name="chargerEmail" placeholder="">
+                                            </div>
+                                            <p class="at-mark">@</p>
+                                            <div class="input-box">
+                                                <input id="chargerEmail" type="text" name="chargerEmail" placeholder="">
+                                            </div>
+                                            <p class="at-mark at-mark-none">@</p>
+                                            <div class="input-box select-box">
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="input-error">
+                                        <img src="/img/input_error.png" alt="">
+                                        <p>올바른 이메일 주소를 입력해주세요.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="input--finish">
+                                <input class="login--go" type="submit" value="회원가입">
+                                <a href="">취소</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="header"></div>
+    <div id="footer"></div>
+    <script src="/js/jquery.js"></script>
+    <script src="/js/public.js"></script>
+    <script src="/js/member.js"></script>
+    <script src="/js/join.js"></script>
+    <!--
+        @@@@@ 회원가입 참고사항 주석입니다. @@@@@
+        설명 : 로그인하기 버튼 클릭 하면 인풋의 값을 검사합니다.
+        요구사항 : 아이디 및 비밀번호 각 항목별로 공란상태에서 로그인하기 버튼을 클릭시 => alert창 출력 "아이디 혹은 비밀번호를 모두 입력해주세요." => 공란상태의 input요소의 부모의 부모 요소인 'input-row'요소에 'error-now'클래스 부여.
+        참조 : 아이디 input의 부모의 부모 요소인 input-row에는 예시로 error-now클래스를 부여한 상태입니다. 작업 시에는 해당 클래스를 지우고 작업 해주세요.
+    -->
+</body>
+</html>
