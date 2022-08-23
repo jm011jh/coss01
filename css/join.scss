@@ -23,16 +23,48 @@ $white : #dddddd;
 
 .input-row{display: flex;width: 100%;}
 .input-row2{display: flex;width: 100%;}
+.input-row3{display: block;width: unset;}
+.input-row3 .input-error{margin-left: 0;margin-top: 6px;}
 .input-error{display: none;font-size: 12px;color: $red;align-items: center;margin-left: 124px;}
 .input-error img{width: 16px;height: 16px;margin-right: 4px;}
 
 .error-now .input-box{border: 1px solid $red;}
 .error-now~.input-error{display: flex;}
+.error-now .input-error{display: flex;}
 
 .at-mark{font-size: 15px;display: flex;align-items: center;margin: 0 4px;}
 .at-mark-none{opacity: 0;}
 .input-row-email{display: flex;width: 603px;}
-.input-row-email .input-box{width: 50%;}
+.input-row-email .input-box{width: calc(100% / 3);}
+.input-row-email .input-box2{width: calc(100% / 3);}
 
-.select-box{padding: 0;}
-.select-box select{width: 100%;height: 100%;outline: none;border: 0px solid #000;border-radius: 6px;}
+.select-box{padding: 0;position: relative;}
+.select-box .open-button{width: 100%;height: 100%;outline: none;border: 0px solid #000;border-radius: 6px;background-color: #fff;display: flex;justify-content: space-between;align-items: center;padding: 11px;padding-right: 18px;}
+.select-box .open-button span{width: 9px;height: 9px;border:solid $greyBlue;border-width: 0 2px 2px 0;transform: translate(0,-25%) rotate(45deg);}
+
+.email-list,
+.year-list,
+.class-list{position: absolute;top: 0;left: 50%;background-color: #fff;width: calc(100% + 2px);border-radius: 6px;border: 1px solid $white;transform: translate(-50%,-1px);display: none;}
+
+.email-list-item,
+.co-email-list-item,
+.year-list-item,
+.class-list-item{font-size: 14px;padding: 17px 12px;border-radius: 6px;}
+
+.email-list-item:hover,
+.co-email-list-item:hover,
+.year-list-item:hover,
+.class-list-item:hover{background-color: #efefef;}
+
+.email-list.on,
+.year-list.on,
+.class-list.on{display: block;}
+
+input.coYear,
+input.doClass{position: relative;cursor: pointer;}
+
+input.coYear ~ .arrow,
+input.doClass ~ .arrow{width: 9px;height: 9px;border: solid #A8B2bF;border-width: 0 2px 2px 0;position: absolute;top: 50%;right: 18px;transform: translate(0,-75%) rotate(45deg);}
+
+.year-list,
+.class-list{display: none;width: 100%;}

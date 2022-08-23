@@ -107,7 +107,7 @@
                                     <div class="input-row">
                                         <div class="input-subject-title"><p>담당자 연락처</p></div>
                                         <div class="input-box input400">
-                                            <label for="chargerNum">담당자 연락처</label>
+                                            <label for="chargerNum">-없이 입력 (예 : 0212345678)</label>
                                             <input id="chargerNum" type="text" name="chargerNum" placeholder="">
                                         </div>
                                     </div>
@@ -119,23 +119,163 @@
                                 <div class="input--subject">
                                     <div class="input-row2">
                                         <div class="input-subject-title"><p>담당자 이메일</p></div>
-                                        <div class="input-row input-row-email error-now">
-                                            <div class="input-box">
-                                                <input id="chargerEmail" type="text" name="chargerEmail" placeholder="">
+                                        <div class="input-row input-row3">
+                                            <div class="input-row-email error-now">
+                                                <div class="input-box">
+                                                    <input id="chargerEmail1" type="text" name="chargerEmail1" placeholder="">
+                                                </div>
+                                                <p class="at-mark">@</p>
+                                                <div class="input-box">
+                                                    <input id="chargerEmail" type="text" name="chargerEmail" placeholder="">
+                                                </div>
+                                                <p class="at-mark at-mark-none">@</p>
+                                                <div class="input-box2 select-box">
+                                                    <div class="open-button" id="openEmailList"><p>직접입력</p><span></span></div>
+                                                    <div id="emailList" class="email-list">
+                                                        <p class="email-list-item">직접입력</p>
+                                                        <p class="email-list-item">naver.com</p>
+                                                        <p class="email-list-item">daum.net</p>
+                                                        <p class="email-list-item">google.com</p>
+                                                        <p class="email-list-item">hanmail.net</p>
+                                                    </div>
+                                                </div>
                                             </div>
-                                            <p class="at-mark">@</p>
-                                            <div class="input-box">
-                                                <input id="chargerEmail" type="text" name="chargerEmail" placeholder="">
+                                            <div class="input-error">
+                                                <img src="/img/input_error.png" alt="">
+                                                <p>올바른 이메일 주소를 입력해주세요.</p>
                                             </div>
-                                            <p class="at-mark at-mark-none">@</p>
-                                            <div class="input-box select-box">
-                                                
-                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="input--section">
+                                <div class="input--section-title">학교/단체 정보</div>
+                                <div class="input--subject">
+                                    <div class="input-row error-now">
+                                        <div class="input-subject-title"><p>학교(단체)명</p></div>
+                                        <div class="input-box input400">
+                                            <label for="coId">학교(단체)명</label>
+                                            <input id="coId" type="text" name="coId" placeholder="">
                                         </div>
                                     </div>
                                     <div class="input-error">
                                         <img src="/img/input_error.png" alt="">
-                                        <p>올바른 이메일 주소를 입력해주세요.</p>
+                                        <p>학교/단체명을 입력해주세요.</p>
+                                    </div>
+                                </div>
+                                <div class="input--subject">
+                                    <div class="input-row">
+                                        <div class="input-subject-title"><p>사업자번호</p></div>
+                                        <div class="input-box input400">
+                                            <label for="coNum">사업자번호</label>
+                                            <input id="coNum" type="text" name="coNum" placeholder="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="input--subject">
+                                    <div class="input-row">
+                                        <div class="input-subject-title"><p>대표자</p></div>
+                                        <div class="input-box input400">
+                                            <label for="coName">단장, 총장, 대표 등 직함과 함께 입력</label>
+                                            <input id="coName" type="text" name="coName" placeholder="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="input--subject">
+                                    <div class="input-row">
+                                        <div class="input-subject-title"><p>대표번호</p></div>
+                                        <div class="input-box input400">
+                                            <label for="coNum">-없이 입력 (예 : 0212345678)</label>
+                                            <input id="coNum" type="text" name="coNum" placeholder="">
+                                        </div>
+                                    </div>
+                                    <div class="input-error">
+                                        <img src="/img/input_error.png" alt="">
+                                        <p>담당자 연락처를 입력해주세요.</p>
+                                    </div>
+                                </div>
+                                <div class="input--subject">
+                                    <div class="input-row">
+                                        <div class="input-subject-title"><p>팩스번호</p></div>
+                                        <div class="input-box input400">
+                                            <input id="faxNum" type="text" name="faxNum" placeholder="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="input--subject">
+                                    <div class="input-row">
+                                        <div class="input-subject-title"><p>소재지</p></div>
+                                        <div class="input-box input400">
+                                            <input id="coAdr" type="text" name="coAdr" placeholder="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="input--subject">
+                                    <div class="input-row2">
+                                        <div class="input-subject-title"><p>대표 이메일</p></div>
+                                        <div class="input-row input-row3">
+                                            <div class="input-row-email error-now">
+                                                <div class="input-box">
+                                                    <input id="coEmail1" type="text" name="coEmail1" placeholder="">
+                                                </div>
+                                                <p class="at-mark">@</p>
+                                                <div class="input-box">
+                                                    <input id="coEmail" type="text" name="coEmail" placeholder="">
+                                                </div>
+                                                <p class="at-mark at-mark-none">@</p>
+                                                <div class="input-box select-box">
+                                                    <div class="open-button" id="openCoEmailList"><p>직접입력</p><span></span></div>
+                                                    <div id="coEmailList" class="email-list">
+                                                        <p class="co-email-list-item">직접입력</p>
+                                                        <p class="co-email-list-item">naver.com</p>
+                                                        <p class="co-email-list-item">daum.net</p>
+                                                        <p class="co-email-list-item">google.com</p>
+                                                        <p class="co-email-list-item">hanmail.net</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="input-error">
+                                                <img src="/img/input_error.png" alt="">
+                                                <p>올바른 이메일 주소를 입력해주세요.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="input--subject">
+                                    <div class="input-row">
+                                        <div class="input-subject-title">설립년도</div>
+                                        <div class="input-box input400">
+                                            <input class="coYear" id="coYear" type="text" name="coYear" placeholder="년도를 선택하세요">
+                                            <span class="arrow"></span>
+                                            <div id="yearList" class="year-list">
+                                                <p class="year-list-item">1990</p>
+                                                <p class="year-list-item">1991</p>
+                                                <p class="year-list-item">1992</p>
+                                                <p class="year-list-item">1993</p>
+                                                <p class="year-list-item">1994</p>
+                                                <p class="year-list-item">1995</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="input--section">
+                                <div class="input--section-title">참가분야 및 소속</div>                                
+                                <div class="input--subject">
+                                    <div class="input-row">
+                                        <div class="input-subject-title">참가분야</div>
+                                        <div class="input-box input400">
+                                            <input class="doClass" id="doClass" type="text" name="doClass" placeholder="홀을 선택하세요">
+                                            <span class="arrow"></span>
+                                            <div id="classList" class="class-list">
+                                                <p class="class-list-item">홀1</p>
+                                                <p class="class-list-item">홀2</p>
+                                                <p class="class-list-item">홀3</p>
+                                                <p class="class-list-item">홀4</p>
+                                                <p class="class-list-item">홀5</p>
+                                                <p class="class-list-item">홀6</p>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>

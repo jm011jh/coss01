@@ -24,6 +24,26 @@
   letter-spacing: -0.25px;
 }
 
+.input-box2 {
+  padding: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  border: 1px solid #dddddd;
+  border-radius: 6px;
+  position: relative;
+}
+
 .input-box {
   padding: 12px;
   display: -webkit-box;
@@ -71,6 +91,10 @@
 }
 
 .input-box.focused {
+  border: 1px solid #0057FF;
+}
+
+.input-box1.focused {
   border: 1px solid #0057FF;
 }
 
