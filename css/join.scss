@@ -80,13 +80,13 @@ input.doClass ~ .arrow{width: 9px;height: 9px;border: solid #A8B2bF;border-width
 .selectType2{z-index: 55;}
 .input--section .input--subject-big{margin-bottom: 40px;}
 .input--section .input-subject-small{margin-bottom: 40px;padding-bottom: 0px;}
+.check-textBox-big{flex-direction: column;}
 
 @media all and (max-width:767px){
     .input--section-title{margin-bottom: 24px;font-size: 18px;}
     .input--section-title span{font-size: 12px;}
     .input--section-title span:after{width: 4px;height: 4px;}
     .input-subject-title{margin-right: 0;margin-bottom: 8px;font-size: 14px;}
-    .check-textBox-big,
     .input-row2,
     .input-row{flex-direction: column;}
     .input-error{margin-left: 0;}

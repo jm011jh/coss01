@@ -302,6 +302,13 @@ input.doClass ~ .arrow {
   padding-bottom: 0px;
 }
 
+.check-textBox-big {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 @media all and (max-width: 767px) {
   .input--section-title {
     margin-bottom: 24px;
@@ -319,7 +326,6 @@ input.doClass ~ .arrow {
     margin-bottom: 8px;
     font-size: 14px;
   }
-  .check-textBox-big,
   .input-row2,
   .input-row {
     -webkit-box-orient: vertical;
