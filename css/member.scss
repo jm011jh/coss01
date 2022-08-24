@@ -13,6 +13,7 @@ $grey01 : #959aa0;
 .member--title p.fontSize01{font-weight: 700;margin-bottom: 18px;letter-spacing: -0.2px;}
 .member--title p.fontSize02{color: $slateGrey;letter-spacing: -0.25px;}
 
+.input-row4 .input-subject-title{align-items: flex-start;padding-top: 14px;}
 .input-box2{padding: 12px;display: flex;flex-direction: column;justify-content: flex-start;align-items: flex-start;border: 1px solid $white;border-radius: 6px;position:relative;}
 .input-box{padding: 12px;display: flex;flex-direction: column;justify-content: flex-start;align-items: flex-start;border: 1px solid $white;border-radius: 6px;position:relative;
     input{border: none;border-radius: 0px;width: 100%;padding: 4px 4px;}
@@ -31,3 +32,37 @@ $grey01 : #959aa0;
 .activate .input-password-switch-open{display: block;}
 
 .input-error{letter-spacing: -0.24px;}
+
+.input-box textarea{width: 100%;outline: none;border: 0px solid #000;resize: none;font-family: 'Pretendard';}
+.input700{width: calc(100% - 124px);}
+.input-row5{margin-bottom: 40px;display: flex;justify-content: space-between;align-items:center;letter-spacing:-0.2px;
+    a{line-height: 1;text-decoration: underline;}
+    input[type=checkbox]{position: absolute;opacity: 0;cursor: pointer;height: 0;width: 0;}
+    .checkmark{display: flex;align-items: flex-start;}
+    .checkmark-center{align-items: center;width: 100%;}
+    .checkmark p{margin-left: 10px;}
+    .checkmark span{width: 20px;height: 20px;border-radius: 50%;border: 1px solid $grey01;cursor: pointer;position: relative;display: block;margin-top: 3px;}
+    .checkmark-center span{margin-top: 0;}
+    .checkmark span:after{content: "";position: absolute;width: 4px;height: 8px;border: solid #fff;border-width: 0 2px 2px 0;transform: translate(-50%,-60%)rotate(45deg) ;top: 50%;left: 50%;}
+    .checked.checkmark span{background-color: $blue;border: 1px solid $blue;}
+    .checkmark p{font-size: 16px;font-weight: 400;}
+    .checkmark p.small{font-size: 14px;font-weight: 400;margin-top: 10px;}
+    .checkmark p.big{font-size: 24px;font-weight: 600;}
+    .check-textBox{display: flex;justify-content: space-between;width: calc(100% - 20px);padding-right: 18px;}
+    .arrow{border: solid $lightGreyBlue;width: 12px;height: 12px;transform: rotate(45deg);border-width: 0 2px 2px 0;}
+}
+.input-row6{margin-bottom: 0px;display: flex;justify-content: space-between;align-items:center;letter-spacing:-0.2px;}
+.input-row-borderbottom{border-bottom: 1px solid #eee;}
+
+.input-infor-textBox{width: 100%;padding: 20px 24px;border-radius: 6px;border: 1px solid $white;background-color: #fafafa;margin-top: 28px;color: $slateGrey;font-size: 14px;height: 194px;overflow: scroll;display: none;}
+.input-infor-textBox::-webkit-scrollbar{display: none;}
+.open .input-infor-textBox{display: block;}
+.open .arrow{transform: rotate(-135deg);}
+
+@media all and (max-width:480px){
+    .input-box{padding: 6px 8px;
+        label{font-size: 10px;}
+    }
+    .input-error{font-size: 10px;}
+    .input-password-switch{width: 30px;height: 30px;right: 4px;}
+}

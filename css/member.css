@@ -24,6 +24,13 @@
   letter-spacing: -0.25px;
 }
 
+.input-row4 .input-subject-title {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding-top: 14px;
+}
+
 .input-box2 {
   padding: 12px;
   display: -webkit-box;
@@ -135,5 +142,195 @@
 
 .input-error {
   letter-spacing: -0.24px;
+}
+
+.input-box textarea {
+  width: 100%;
+  outline: none;
+  border: 0px solid #000;
+  resize: none;
+  font-family: 'Pretendard';
+}
+
+.input700 {
+  width: calc(100% - 124px);
+}
+
+.input-row5 {
+  margin-bottom: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  letter-spacing: -0.2px;
+}
+
+.input-row5 a {
+  line-height: 1;
+  text-decoration: underline;
+}
+
+.input-row5 input[type=checkbox] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.input-row5 .checkmark {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.input-row5 .checkmark-center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.input-row5 .checkmark p {
+  margin-left: 10px;
+}
+
+.input-row5 .checkmark span {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid #959aa0;
+  cursor: pointer;
+  position: relative;
+  display: block;
+  margin-top: 3px;
+}
+
+.input-row5 .checkmark-center span {
+  margin-top: 0;
+}
+
+.input-row5 .checkmark span:after {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 8px;
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: translate(-50%, -60%) rotate(45deg);
+          transform: translate(-50%, -60%) rotate(45deg);
+  top: 50%;
+  left: 50%;
+}
+
+.input-row5 .checked.checkmark span {
+  background-color: #0057FF;
+  border: 1px solid #0057FF;
+}
+
+.input-row5 .checkmark p {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.input-row5 .checkmark p.small {
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 10px;
+}
+
+.input-row5 .checkmark p.big {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.input-row5 .check-textBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: calc(100% - 20px);
+  padding-right: 18px;
+}
+
+.input-row5 .arrow {
+  border: solid #A8B2bF;
+  width: 12px;
+  height: 12px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  border-width: 0 2px 2px 0;
+}
+
+.input-row6 {
+  margin-bottom: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  letter-spacing: -0.2px;
+}
+
+.input-row-borderbottom {
+  border-bottom: 1px solid #eee;
+}
+
+.input-infor-textBox {
+  width: 100%;
+  padding: 20px 24px;
+  border-radius: 6px;
+  border: 1px solid #dddddd;
+  background-color: #fafafa;
+  margin-top: 28px;
+  color: #656A71;
+  font-size: 14px;
+  height: 194px;
+  overflow: scroll;
+  display: none;
+}
+
+.input-infor-textBox::-webkit-scrollbar {
+  display: none;
+}
+
+.open .input-infor-textBox {
+  display: block;
+}
+
+.open .arrow {
+  -webkit-transform: rotate(-135deg);
+          transform: rotate(-135deg);
+}
+
+@media all and (max-width: 480px) {
+  .input-box {
+    padding: 6px 8px;
+  }
+  .input-box label {
+    font-size: 10px;
+  }
+  .input-error {
+    font-size: 10px;
+  }
+  .input-password-switch {
+    width: 30px;
+    height: 30px;
+    right: 4px;
+  }
 }
 /*# sourceMappingURL=member.css.map */
