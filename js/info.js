@@ -3,27 +3,45 @@ infoSelectButton.forEach(function(el){
     let parent = el.closest(".inputParent")
     let selectBox = parent.querySelector(".info--wrap-body-row-inputRow-list")
     let selectBoxAll = document.querySelectorAll(".info--wrap-body-row-inputRow-list")
-    let buttonText = el.querySelector("p")
-    let input = parent.querySelector("input")
+    let listItem = selectBox.querySelectorAll(".info--wrap-body-row-inputRow-listItem")
     el.addEventListener("click",function(){
         for(a of selectBoxAll){
             a.classList.remove("show")
         }
+        for(a of listItem){
+            a.classList.remove("show")
+        }
         selectBox.classList.add("show")//버튼을 누르면 셀렉박스를 보여주세요
     })
+})
 
-    let listItem = selectBox.querySelectorAll(".info--wrap-body-row-inputRow-listItem")
-    listItem.forEach(function(list){
-        list.addEventListener("click",function(){
-            let text = list.innerHTML
-            let textCut = ''
-            if(text.length>20){textCut = text.substring(0,20) + "..."
-            }else{textCut = text}
-            input.value = text
-            buttonText.innerHTML = textCut
+const selectType1 = document.querySelectorAll(".selectType1")//항목 셀렉트박스 항목들
+selectType1.forEach(function(el){
+        el.addEventListener("click",function(){
+            let text = el.innerHTML
+            let parent = el.closest(".inputParent")
+            let selectBox = parent.querySelector(".info--wrap-body-row-inputRow-list")
+            let button = parent.querySelector(".info--wrap-body-row-inputRow-selectButton p")
+            let input = parent.querySelector("input")
             selectBox.classList.remove("show")
+            input.value = text
+            button.innerHTML = text
+            console.log(text)
         })
-    })
+})
+const selectType2 = document.querySelectorAll(".selectType2")//이메일리스트 셀렉트박스 항목들
+selectType2.forEach(function(el){
+        el.addEventListener("click",function(){
+            let text = el.innerHTML
+            let parent = el.closest(".inputParent")
+            let selectBox = parent.querySelector(".info--wrap-body-row-inputRow-list")
+            let input = parent.querySelector(".emailInput")
+            selectBox.classList.remove("show")
+            console.log(input)
+            input.value = text
+            input.innerHTML = text
+            input.classList.add("sex")
+        })
 })
 const fileInput = document.getElementById("fileInput")
 const fileNameHere = document.getElementById("fileNameHere")

@@ -68,6 +68,26 @@ body {
   letter-spacing: -0.02em;
 }
 
+input {
+  font-family: 'Pretendard';
+}
+
+input::-webkit-input-placeholder {
+  letter-spacing: -0.02em;
+}
+
+input:-ms-input-placeholder {
+  letter-spacing: -0.02em;
+}
+
+input::-ms-input-placeholder {
+  letter-spacing: -0.02em;
+}
+
+input::placeholder {
+  letter-spacing: -0.02em;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -92,6 +112,10 @@ p {
 
 .relative {
   position: relative;
+}
+
+.fw600 {
+  font-weight: 600;
 }
 
 .fontSize01 {

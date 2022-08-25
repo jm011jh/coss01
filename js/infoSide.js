@@ -1,0 +1,1 @@
+$.get("/inc/infoSide.html", (data)=>{$("#infoSide").prepend(data)})

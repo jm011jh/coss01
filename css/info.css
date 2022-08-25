@@ -31,9 +31,51 @@ input {
   border-right: 1px solid #E9EAED;
 }
 
-.info--side-title {
+.info--side a {
+  display: block;
+}
+
+.info--side-text1 {
   font-size: 24px;
-  font-weight: 500;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.info--side-text2 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.info--side-text3 {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+a.info--side-text2 {
+  padding: 12px 0;
+  color: #121619;
+}
+
+a.info--side-text3 {
+  padding: 11px 0;
+  color: #656A71;
+}
+
+a.info--side-last-button {
+  color: #0057FF;
+  border: 1px solid #0057FF;
+  padding: 19px 0;
+  text-align: center;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 600;
+  max-width: 160px;
+  width: 100%;
+  margin-top: 40px;
+}
+
+.info--side .now {
+  color: #0057FF;
 }
 
 .info--wrap-title-text01 {
@@ -47,6 +89,7 @@ input {
   letter-spacing: -0.02em;
   color: #656A71;
   margin-top: 0.5em;
+  font-weight: 500;
 }
 
 .info--wrap-head {
@@ -162,6 +205,22 @@ input {
   font-size: 16px;
 }
 
+.info--wrap-body-row-noInputRow {
+  margin-bottom: 35px;
+}
+
+.info--wrap-body-row-inputRow-atMark {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  -webkit-transform: translate(100%, -50%);
+          transform: translate(100%, -50%);
+  padding: 0 4px;
+  font-size: 15px;
+  color: #121619;
+  font-weight: 500;
+}
+
 .info--wrap-body-row-inputRow-title {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -171,6 +230,7 @@ input {
           align-items: center;
   font-size: 15px;
   min-width: 125px;
+  font-weight: 600;
 }
 
 .info--wrap-body-row-inputRow-title.require span {
@@ -264,6 +324,7 @@ input {
   padding: 18px 12px 20px;
   position: relative;
   cursor: pointer;
+  font-weight: 500;
 }
 
 .info--wrap-body-row-inputRow-selectButton span {
@@ -298,7 +359,10 @@ input {
 }
 
 .info--wrap-body-row-inputRow-listItem {
-  padding: 18px 12px 20px;
+  padding: 18px 12px;
+  font-weight: 500;
+  border-radius: 6px;
+  line-height: 1.2;
 }
 
 .info--wrap-body-row-inputRow-listItem:hover {
@@ -330,6 +394,10 @@ input {
   max-width: 100px;
 }
 
+.input-box200 {
+  max-width: 188px;
+}
+
 .input-box300 {
   max-width: 292px;
 }
@@ -340,6 +408,10 @@ input {
 
 .input-box700 {
   max-width: 708px;
+}
+
+.input-box700 {
+  width: 100%;
 }
 
 .info--input-first {
@@ -377,5 +449,10 @@ input {
   padding: 18px 0;
   border-radius: 6px;
   cursor: pointer;
+  font-weight: 600;
+}
+
+.no-border {
+  border: unset;
 }
 /*# sourceMappingURL=info.css.map */

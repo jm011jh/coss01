@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/public.css">
+    <link rel="stylesheet" href="/css/info.css">
+</head>
+<body>
+    <div id="container">
+        <div id="content">
+            <div class="info--container">
+                <div id="infoSide" class="info--side">
+                </div>
+                <div class="info--wrap">
+                    <div class="info--wrap-head">
+                        <div class="info--wrap-title">
+                            <div class="info--wrap-title-text01">가입 정보</div>
+                            <div class="info--wrap-title-text02">정보를 수정하시려면 저장버튼을 눌러주세요.</div>
+                        </div>
+                    </div>
+                    <form action="">
+                        <div class="info--wrap-body">
+                            <div class="info--wrap-body-row">
+                                <div class="info--wrap-body-row-title">
+                                    <p class="info--wrap-body-row-text01">기본정보</p>
+                                    <p class="info--wrap-require"><span></span>필수입력</p>
+                                </div>
+                                <div class="info--wrap-body-row-content">
+                                    <div class="info--wrap-body-row-inputRow no-border info--wrap-body-row-noInputRow">
+                                        <p class="info--wrap-body-row-inputRow-title require">전시분야<span></span></p>
+                                        <div class="input-box400 relative info--input-first inputParent">
+                                            <p class="fw600">유저의아이디</p>
+                                            <!-- <input class="info--wrap-body-row-inputRow-input" id="selectInput1" type="text" name="" placeholder=""> -->
+                                        </div>
+                                    </div>
+                                    <div class="info--wrap-body-row-inputRow">
+                                        <p class="info--wrap-body-row-inputRow-title">새 비밀번호<span></span></p>
+                                        <div class="input-box400 relative info--input-first inputParent info--input">
+                                            <input class="info--wrap-body-row-inputRow-input info--wrap-body-row-inputRow-input-relative" id="pwInput1" type="text" name="pwInput1" placeholder="6~10자의 영문과 숫자 조합"
+                                            onfocus="this.placeholder=''" onblur="this.placeholder='6~10자의 영문과 숫자 조합'" >
+                                        </div>
+                                    </div>
+                                    <div class="info--wrap-body-row-inputRow">
+                                        <p class="info--wrap-body-row-inputRow-title">새 비밀번호 확인<span></span></p>
+                                        <div class="input-box400 relative info--input-first inputParent info--input">
+                                            <input class="info--wrap-body-row-inputRow-input info--wrap-body-row-inputRow-input-relative" id="pwInput2" type="text" name="pwInput2" placeholder="6~10자의 영문과 숫자 조합"
+                                            onfocus="this.placeholder=''" onblur="this.placeholder='6~10자의 영문과 숫자 조합'" >
+                                            <!-- <label for="selectInput3">전체 URL</label> -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="info--wrap-body-row">
+                                <div class="info--wrap-body-row-title">
+                                    <p class="info--wrap-body-row-text01">담당자 정보</p>
+                                    <!-- <p class="info--wrap-require"><span></span>필수입력</p> -->
+                                </div>
+                                <div class="info--wrap-body-row-content">
+                                    <div class="info--wrap-body-row-inputRow">
+                                        <p class="info--wrap-body-row-inputRow-title require">담당자 이름<span></span></p>
+                                        <div class="input-box400 relative info--input-first inputParent info--input">
+                                            <input class="info--wrap-body-row-inputRow-input info--wrap-body-row-inputRow-input-relative" id="textInput1" type="text" name="textInput1" placeholder="블로그, 유튜브, 페이스북 등 대표 SNS 1개"
+                                            onfocus="this.placeholder=''" onblur="this.placeholder='블로그, 유튜브, 페이스북 등 대표 SNS 1개'" >
+                                            <!-- <label for="selectInput3">전체 URL</label> -->
+                                        </div>
+                                    </div>
+                                    <div class="info--wrap-body-row-inputRow">
+                                        <p class="info--wrap-body-row-inputRow-title">담당자 직책<span></span></p>
+                                        <div class="input-box400 relative info--input-first inputParent info--input">
+                                            <input class="info--wrap-body-row-inputRow-input info--wrap-body-row-inputRow-input-relative" id="textInput2" type="text" name="textInput2" placeholder="">
+                                            <!-- <label for="selectInput3">전체 URL</label> -->
+                                        </div>
+                                    </div>
+                                    <div class="info--wrap-body-row-inputRow">
+                                        <p class="info--wrap-body-row-inputRow-title">담당자 부서<span></span></p>
+                                        <div class="input-box400 relative info--input-first inputParent info--input">
+                                            <input class="info--wrap-body-row-inputRow-input info--wrap-body-row-inputRow-input-relative" id="textInput3" type="text" name="textInput3" placeholder="">
+                                            <!-- <label for="selectInput3">전체 URL</label> -->
+                                        </div>
+                                    </div>
+                                    <div class="info--wrap-body-row-inputRow">
+                                        <p class="info--wrap-body-row-inputRow-title require">담당자 연락처<span></span></p>
+                                        <div class="input-box400 relative info--input-first inputParent info--input">
+                                            <input class="info--wrap-body-row-inputRow-input info--wrap-body-row-inputRow-input-relative" id="telInput" type="text" name="telInput" placeholder="">
+                                            <!-- <label for="selectInput3">전체 URL</label> -->
+                                        </div>
+                                    </div>
+                                    <div class="info--wrap-body-row-inputRow inputParent">
+                                        <p class="info--wrap-body-row-inputRow-title">담당자 이메일<span></span></p>
+                                        <div class="input-box200 relative info--input-first info--input">
+                                            <input class="info--wrap-body-row-inputRow-input info--wrap-body-row-inputRow-input-relative" id="emailInput1" type="text" name="emailInput1" placeholder="">
+                                            <p class="info--wrap-body-row-inputRow-atMark">@</p>
+                                        </div>
+                                        <div class="input-box200 relative info--input-first info--input">
+                                            <input class="info--wrap-body-row-inputRow-input info--wrap-body-row-inputRow-input-relative emailInput" id="emailInput2" type="text" name="emailInput2" placeholder="">
+                                        </div>
+                                        <div class="input-box200 relative info--input-first info--input">
+                                            <input class="info--wrap-body-row-inputRow-input" id="selectEmail" type="text" name="selectEmail" placeholder="">
+                                            <div class="info--wrap-body-row-inputRow-selectButton selectButton1"><p>직접입력</p><span></span></div>
+                                            <div class="info--wrap-body-row-inputRow-list">
+                                                <p class="info--wrap-body-row-inputRow-listItem selectType2">직접입력</p>
+                                                <p class="info--wrap-body-row-inputRow-listItem selectType2">naver.com</p>
+                                                <p class="info--wrap-body-row-inputRow-listItem selectType2">daum.net</p>
+                                                <p class="info--wrap-body-row-inputRow-listItem selectType2">google.com</p>
+                                                <p class="info--wrap-body-row-inputRow-listItem selectType2">hanmail.net</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="info--wrap-body-row">
+                                <div class="info--wrap-body-row-title">
+                                    <p class="info--wrap-body-row-text01">학교/단체 정보</p>
+                                    <!-- <p class="info--wrap-require"><span></span>필수입력</p> -->
+                                </div>
+                                <div class="info--wrap-body-row-content">
+                                    <div class="info--wrap-body-row-inputRow">
+                                        <p class="info--wrap-body-row-inputRow-title require">학교(단체)명<span></span></p>
+                                        <div class="input-box400 relative info--input-first inputParent info--input">
+                                            <input class="info--wrap-body-row-inputRow-input info--wrap-body-row-inputRow-input-relative" id="textInput11" type="text" name="textInput1" placeholder="">
+                                            <!-- <label for="selectInput3">전체 URL</label> -->
+                                        </div>
+                                    </div>
+                                    <div class="info--wrap-body-row-inputRow">
+                                        <p class="info--wrap-body-row-inputRow-title require">사업자번호<span></span></p>
+                                        <div class="input-box400 relative info--input-first inputParent info--input">
+                                            <input class="info--wrap-body-row-inputRow-input info--wrap-body-row-inputRow-input-relative" id="textInput12" type="text" name="textInput2" placeholder="">
+                                            <!-- <label for="selectInput3">전체 URL</label> -->
+                                        </div>
+                                    </div>
+                                    <div class="info--wrap-body-row-inputRow">
+                                        <p class="info--wrap-body-row-inputRow-title require">대표자<span></span></p>
+                                        <div class="input-box400 relative info--input-first inputParent info--input">
+                                            <input class="info--wrap-body-row-inputRow-input info--wrap-body-row-inputRow-input-relative" id="textInput13" type="text" name="textInput3" placeholder="">
+                                            <!-- <label for="selectInput3">전체 URL</label> -->
+                                        </div>
+                                    </div>
+                                    <div class="info--wrap-body-row-inputRow">
+                                        <p class="info--wrap-body-row-inputRow-title require">대표번호<span></span></p>
+                                        <div class="input-box400 relative info--input-first inputParent info--input">
+                                            <input class="info--wrap-body-row-inputRow-input info--wrap-body-row-inputRow-input-relative" id="telInput2" type="text" name="telInput" placeholder="">
+                                            <!-- <label for="selectInput3">전체 URL</label> -->
+                                        </div>
+                                    </div>
+                                    <div class="info--wrap-body-row-inputRow">
+                                        <p class="info--wrap-body-row-inputRow-title">팩스번호<span></span></p>
+                                        <div class="input-box400 relative info--input-first inputParent info--input">
+                                            <input class="info--wrap-body-row-inputRow-input info--wrap-body-row-inputRow-input-relative" id="telInput3" type="text" name="telInput" placeholder="">
+                                            <!-- <label for="selectInput3">전체 URL</label> -->
+                                        </div>
+                                    </div>
+                                    <div class="info--wrap-body-row-inputRow">
+                                        <p class="info--wrap-body-row-inputRow-title">소재지<span></span></p>
+                                        <div class="input-box400 relative info--input-first inputParent info--input">
+                                            <input class="info--wrap-body-row-inputRow-input info--wrap-body-row-inputRow-input-relative" id="addInput" type="text" name="telInput" placeholder="">
+                                            <!-- <label for="selectInput3">전체 URL</label> -->
+                                        </div>
+                                    </div>
+                                    <div class="info--wrap-body-row-inputRow inputParent">
+                                        <p class="info--wrap-body-row-inputRow-title require">대표 이메일<span></span></p>
+                                        <div class="input-box200 relative info--input-first info--input">
+                                            <input class="info--wrap-body-row-inputRow-input info--wrap-body-row-inputRow-input-relative" id="emailInput11" type="text" name="emailInput1" placeholder="">
+                                            <p class="info--wrap-body-row-inputRow-atMark">@</p>
+                                        </div>
+                                        <div class="input-box200 relative info--input-first info--input">
+                                            <input class="info--wrap-body-row-inputRow-input info--wrap-body-row-inputRow-input-relative emailInput" id="emailInput12" type="text" name="emailInput2" placeholder="">
+                                        </div>
+                                        <div class="input-box200 relative info--input-first info--input">
+                                            <input class="info--wrap-body-row-inputRow-input" id="selectEmail2" type="text" name="selectEmail2" placeholder="">
+                                            <div class="info--wrap-body-row-inputRow-selectButton selectButton1"><p>직접입력</p><span></span></div>
+                                            <div class="info--wrap-body-row-inputRow-list">
+                                                <p class="info--wrap-body-row-inputRow-listItem selectType2">직접입력</p>
+                                                <p class="info--wrap-body-row-inputRow-listItem selectType2">naver.com</p>
+                                                <p class="info--wrap-body-row-inputRow-listItem selectType2">daum.net</p>
+                                                <p class="info--wrap-body-row-inputRow-listItem selectType2">google.com</p>
+                                                <p class="info--wrap-body-row-inputRow-listItem selectType2">hanmail.net</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="info--wrap-body-row info--wrap-body-row-submit">
+                                <input class="info--wrap-body-submitButtom" type="submit" value="저장하기">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="header"></div>
+    <div id="footer"></div>
+    <script src="/js/jquery.js"></script>
+    <script src="/js/public.js"></script>
+    <script src="/js/infoSide.js"></script><!-- info 페이지에 모두 삽입합니다. #infoSide 요소에 .info--side-wrap 요소를 불러옵니다 -->
+    <script src="/js/info.js"></script>
+</body>
+</html>
