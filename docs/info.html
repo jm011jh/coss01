@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/public.css">
+    <link rel="stylesheet" href="/css/info.css">
+</head>
+<body>
+    <div id="container">
+        <div id="content">
+            <div class="info--container">
+                <div class="info--side">
+                    <p class="info--side-title">마이페이지</p>
+                </div>
+                <div class="info--wrap">
+                    <div class="info--wrap-head">
+                        <div class="info--wrap-title">
+                            <div class="info--wrap-title-text01">부스 정보</div>
+                            <div class="info--wrap-title-text02">정보를 수정하시려면 저장버튼을 눌러주세요.</div>
+                        </div>
+                        <div class="info--wrap-etc">
+                            <img class="info--deny" src="/img/info_deny.png" alt="">
+                            <img class="info--permission" src="/img/info_permission.png" alt="">
+                            <p class="info--deny">승인 대기</p>
+                            <p class="info--permission">승인 완료</p>
+                            <div class="if-deny"><p>기관 승인 완료 후 부스 관리를 하실 수 있습니다.</p></div>
+                        </div>
+                    </div>
+                    <form action="">
+                        <div class="info--wrap-body">
+                            <div class="info--wrap-body-row">
+                                <div class="info--wrap-body-row-title">
+                                    <p class="info--wrap-body-row-text01">전시분야</p>
+                                    <p class="info--wrap-require"><span></span>필수입력</p>
+                                </div>
+                                <div class="info--wrap-body-row-content">
+                                    <div class="info--wrap-body-row-inputRow">
+                                        <p class="info--wrap-body-row-inputRow-title require">전시분야<span></span></p>
+                                        <div class="input-box400 relative info--input-first inputParent info--input">
+                                            <input class="info--wrap-body-row-inputRow-input" id="selectInput1" type="text" name="" placeholder="">
+                                            <div class="info--wrap-body-row-inputRow-selectButton selectButton1"><p>홀을 선택하세요</p><span></span></div>
+                                            <div class="info--wrap-body-row-inputRow-list selectType1">
+                                                <p class="info--wrap-body-row-inputRow-listItem">1홀 LINC+ 산학협력 고도화형 선도대학관</p>
+                                                <p class="info--wrap-body-row-inputRow-listItem">2홀 LINC+ 사회맞춤형학과 중점형 선도대학관</p>
+                                                <p class="info--wrap-body-row-inputRow-listItem">3홀 LINC+ 산학협력 고도화형 선도전문대학관</p>
+                                                <p class="info--wrap-body-row-inputRow-listItem">4홀 LINC+ 사회맞춤형학과 중점형 선도전문대학관</p>
+                                                <p class="info--wrap-body-row-inputRow-listItem">5홀 LINC+ 4차산업혁명 혁신선도대학관</p>
+                                                <p class="info--wrap-body-row-inputRow-listItem">6홀 디지털 신기술 인재양성 혁신공유대학 사업관</p>
+                                                <p class="info--wrap-body-row-inputRow-listItem">7홀 대학 창의적 자산 실용화 지원(BRIDGE+)사업관/산학연협력 기술지주회사관</p>
+                                                <p class="info--wrap-body-row-inputRow-listItem">8홀 4단계 BK21</p>
+                                                <p class="info--wrap-body-row-inputRow-listItem">9홀 마이스터대 시범운영 사업관</p>
+                                                <p class="info--wrap-body-row-inputRow-listItem">10홀 대학 내 산학연협력단지 조성사업관/조기취업형 계약학과 선도대학·선도전문대학 육성사업관/학교기업 지원사업관</p>
+                                                <p class="info--wrap-body-row-inputRow-listItem">11홀 학생창업페스티벌</p>
+                                                <p class="info--wrap-body-row-inputRow-listItem">12홀 산업계관점 대학평가관</p>
+                                            </div>
+                                        </div>
+                                        <div class="input-box300 relative info--input-first inputParent info--input">
+                                            <input class="info--wrap-body-row-inputRow-input" id="selectInput2" type="text" name="" placeholder="">
+                                            <div class="info--wrap-body-row-inputRow-selectButton selectButton1"><p>세부 사업을 선택하세요</p><span></span></div>
+                                            <div class="info--wrap-body-row-inputRow-list selectType1">
+                                                <p class="info--wrap-body-row-inputRow-listItem">산학협력 고도화형</p>
+                                                <p class="info--wrap-body-row-inputRow-listItem">사회맞춤형학과 중점형</p>
+                                                <p class="info--wrap-body-row-inputRow-listItem">산학협력 고도화형</p>
+                                                <p class="info--wrap-body-row-inputRow-listItem">사회맞춤형학과 중점형</p>
+                                                <p class="info--wrap-body-row-inputRow-listItem">4차 산업혁명 혁신선도대학</p>
+                                                <p class="info--wrap-body-row-inputRow-listItem">디지털 신기술 인재양성 혁신공유대학 사업</p>
+                                                <p class="info--wrap-body-row-inputRow-listItem">대학 창의적 자산 실용화 지원(BRIDGE+)사업</p>
+                                                <p class="info--wrap-body-row-inputRow-listItem">산학연협력 기술지주회사</p>
+                                                <p class="info--wrap-body-row-inputRow-listItem">4단계 BK21</p>
+                                                <p class="info--wrap-body-row-inputRow-listItem">마이스터대 시범운영 사업관</p>
+                                                <p class="info--wrap-body-row-inputRow-listItem">대학 내 산학연협력단지</p>
+                                                <p class="info--wrap-body-row-inputRow-listItem">조기취업형 계약학과 선도대학·선도전문대학 육성사업</p>
+                                                <p class="info--wrap-body-row-inputRow-listItem">학교기업 지원사업</p>
+                                                <p class="info--wrap-body-row-inputRow-listItem">창업도전형 실전창업트랙</p>
+                                                <p class="info--wrap-body-row-inputRow-listItem">산업계관점 대학평가관</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="info--wrap-body-row">
+                                <div class="info--wrap-body-row-title">
+                                    <p class="info--wrap-body-row-text01">세부 정보</p>
+                                    <!-- <p class="info--wrap-require"><span></span>필수입력</p> -->
+                                </div>
+                                <div class="info--wrap-body-row-content">
+                                    <div class="info--wrap-body-row-inputRow">
+                                        <p class="info--wrap-body-row-inputRow-title">로고 이미지<span></span></p>
+                                        <div class="input-box400 relative info--input-first inputParent info--input">
+                                            <p id="fileNameHere" class="input--wrap-body-row-inputRow-filePath"></p>
+                                            <p class="info--wrap-body-row-inputRow-exp"></p>
+                                        </div>
+                                        <div class="input-box100 relative info--input-first inputParent info--input">
+                                            <input class="info--wrap-body-row-inputRow-input" id="fileInput" type="file" name="fileInput" placeholder="" accept="png" value="" onchange="fileCheck(this)">
+                                            <label class="info--wrap-body-row-inputRow-fileUploadButton" for="fileInput">파일찾기</label>
+                                        </div>
+                                    </div>
+                                    <div class="info--wrap-body-row-inputRow">
+                                        <p class="info--wrap-body-row-inputRow-title">설립년도<span></span></p>
+                                        <div class="input-box400 relative info--input-first inputParent info--input">
+                                            <input class="info--wrap-body-row-inputRow-input" id="selectInput3" type="text" name="selectInput3" placeholder="">
+                                            <div class="info--wrap-body-row-inputRow-selectButton selectButton1"><p>년도를 선택하세요</p><span></span></div>
+                                            <div class="info--wrap-body-row-inputRow-list selectType1">
+                                                <p class="info--wrap-body-row-inputRow-listItem">3333</p>
+                                                <p class="info--wrap-body-row-inputRow-listItem">2022</p>
+                                                <p class="info--wrap-body-row-inputRow-listItem">1990</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="info--wrap-body-row-inputRow">
+                                        <p class="info--wrap-body-row-inputRow-title">홈페이지<span></span></p>
+                                        <div class="input-box400 relative info--input-first inputParent info--input">
+                                            <input class="info--wrap-body-row-inputRow-input info--wrap-body-row-inputRow-input-relative" id="textInput1" type="text" name="selectInput3" placeholder="전체 URL"
+                                            onfocus="this.placeholder=''" onblur="this.placeholder='전체 URL'" >
+                                            <!-- <label for="selectInput3">전체 URL</label> -->
+                                        </div>
+                                    </div>
+                                    <div class="info--wrap-body-row-inputRow">
+                                        <p class="info--wrap-body-row-inputRow-title">SNS<span></span></p>
+                                        <div class="input-box400 relative info--input-first inputParent info--input">
+                                            <input class="info--wrap-body-row-inputRow-input info--wrap-body-row-inputRow-input-relative" id="textInput2" type="text" name="selectInput3" placeholder="블로그, 유튜브, 페이스북 등 대표 SNS 1개"
+                                            onfocus="this.placeholder=''" onblur="this.placeholder='블로그, 유튜브, 페이스북 등 대표 SNS 1개'" >
+                                            <!-- <label for="selectInput3">전체 URL</label> -->
+                                        </div>
+                                    </div>
+                                    <div class="info--wrap-body-row-inputRow require">
+                                        <p class="info--wrap-body-row-inputRow-title require upper">소개내용<span></span></p>
+                                        <div class="input-box700 relative info--input-first inputParent info--input">
+                                            <textarea class="info--wrap-body-row-inputRow-input info--wrap-body-row-inputRow-input-relative" id="textInput2" type="text" name="selectInput3"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="info--wrap-body-row info--wrap-body-row-submit">
+                                <input class="info--wrap-body-submitButtom" type="submit" value="저장하기">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="header"></div>
+    <div id="footer"></div>
+    <script src="/js/jquery.js"></script>
+    <script src="/js/public.js"></script>
+    <script src="/js/info.js"></script>
+</body>
+</html>
