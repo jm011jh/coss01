@@ -10,12 +10,12 @@ $grey01 : #959aa0;
 .input-row:not(:last-child){margin-bottom: 16px;}
 .input-box{padding: 12px;display: flex;flex-direction: column;justify-content: flex-start;align-items: flex-start;border: 1px solid $white;border-radius: 6px;position:relative;
     input{border: none;border-radius: 0px;width: 100%;padding: 4px 4px;}
-    input:focus{border: 0px solid #000;outline: none;}
+    input:focus{border: 0px solid $dark;outline: none;}
     input:active{border: none;}
     input, .input-box label{display: block;}
     label{font-size: 12px;color: #aaaaaa;padding-left: 4px;}
 }
-input.login--go{font-size: 16px;color: #fff;background-color: $blue;border-radius: 6px;width: 100%;padding: 22px 0;font-weight: 400;cursor: pointer;outline: none;border: 0px solid #000;line-height: 1;}
+input.login--go{font-size: 16px;color: #fff;background-color: $blue;border-radius: 6px;width: 100%;padding: 22px 0;font-weight: 400;cursor: pointer;outline: none;border: 0px solid $dark;line-height: 1;}
 input.login--go:focus{outline: none;}
 .input-box.focused{border: 1px solid $blue;}
 

@@ -17,7 +17,7 @@ $grey01 : #959aa0;
 .input-box2{padding: 12px;display: flex;flex-direction: column;justify-content: flex-start;align-items: flex-start;border: 1px solid $white;border-radius: 6px;position:relative;}
 .input-box{padding: 12px;display: flex;flex-direction: column;justify-content: flex-start;align-items: flex-start;border: 1px solid $white;border-radius: 6px;position:relative;
     input{border: none;border-radius: 0px;width: 100%;padding: 4px 4px;}
-    input:focus{border: 0px solid #000;outline: none;}
+    input:focus{border: 0px solid $dark;outline: none;}
     input:active{border: none;}
     input, .input-box label{display: block;}
     label{font-size: 12px;color: #aaaaaa;padding-left: 4px;}
@@ -33,7 +33,7 @@ $grey01 : #959aa0;
 
 .input-error{letter-spacing: -0.24px;}
 
-.input-box textarea{width: 100%;outline: none;border: 0px solid #000;resize: none;font-family: 'Pretendard';}
+.input-box textarea{width: 100%;outline: none;border: 0px solid $dark;resize: none;font-family: 'Pretendard';}
 .input700{width: calc(100% - 124px);}
 .input-row5{margin-bottom: 40px;display: flex;justify-content: space-between;align-items:center;letter-spacing:-0.2px;
     a{line-height: 1;text-decoration: underline;}

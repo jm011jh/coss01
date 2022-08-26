@@ -68,22 +68,30 @@ body {
   letter-spacing: -0.02em;
 }
 
-input {
+textarea, input {
   font-family: 'Pretendard';
 }
 
+textarea {
+  resize: none;
+}
+
+textarea::-webkit-input-placeholder,
 input::-webkit-input-placeholder {
   letter-spacing: -0.02em;
 }
 
+textarea:-ms-input-placeholder,
 input:-ms-input-placeholder {
   letter-spacing: -0.02em;
 }
 
+textarea::-ms-input-placeholder,
 input::-ms-input-placeholder {
   letter-spacing: -0.02em;
 }
 
+textarea::placeholder,
 input::placeholder {
   letter-spacing: -0.02em;
 }
@@ -112,6 +120,10 @@ p {
 
 .relative {
   position: relative;
+}
+
+.opac0 {
+  opacity: 0;
 }
 
 .fw600 {
@@ -179,6 +191,7 @@ p {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  position: relative;
 }
 
 .header--menu {
@@ -203,6 +216,10 @@ p {
   padding: 20px;
 }
 
+#memberIcon {
+  border: unset;
+}
+
 .header--info {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -215,7 +232,12 @@ p {
 }
 
 .header--member {
-  margin-right: 24px;
+  margin-right: 12px;
+}
+
+.header--member svg {
+  width: 32px;
+  height: 32px;
 }
 
 .header--ham {

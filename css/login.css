@@ -30,7 +30,7 @@
 }
 
 .input-box input:focus {
-  border: 0px solid #000;
+  border: 0px solid #121619;
   outline: none;
 }
 
@@ -58,7 +58,7 @@ input.login--go {
   font-weight: 400;
   cursor: pointer;
   outline: none;
-  border: 0px solid #000;
+  border: 0px solid #121619;
   line-height: 1;
 }
 

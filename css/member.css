@@ -79,7 +79,7 @@
 }
 
 .input-box input:focus {
-  border: 0px solid #000;
+  border: 0px solid #121619;
   outline: none;
 }
 
@@ -147,7 +147,7 @@
 .input-box textarea {
   width: 100%;
   outline: none;
-  border: 0px solid #000;
+  border: 0px solid #121619;
   resize: none;
   font-family: 'Pretendard';
 }
