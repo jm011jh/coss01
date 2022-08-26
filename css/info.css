@@ -17,10 +17,10 @@ input {
 }
 
 .info--wrap {
-  width: 100%;
+  width: calc(100% - 208px);
   max-width: 1020px;
   margin: 0 auto;
-  padding: 80px 0;
+  padding: 67px 0 80px;
   padding-left: 104px;
 }
 
@@ -33,6 +33,10 @@ input {
 
 .info--side a {
   display: block;
+}
+
+.info--side-tab1 p {
+  cursor: pointer;
 }
 
 .info--side-text1 {
@@ -52,11 +56,21 @@ input {
 }
 
 a.info--side-text2 {
-  padding: 12px 0;
+  padding: 13px 0;
+  color: #121619;
+}
+
+p.info--side-text2 {
+  padding: 13px 0;
   color: #121619;
 }
 
 a.info--side-text3 {
+  padding: 11px 0;
+  color: #656A71;
+}
+
+p.info--side-text3 {
   padding: 11px 0;
   color: #656A71;
 }
@@ -74,14 +88,49 @@ a.info--side-last-button {
   margin-top: 40px;
 }
 
+p.info--side-last-button {
+  color: #0057FF;
+  border: 1px solid #0057FF;
+  padding: 19px 0;
+  text-align: center;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 600;
+  max-width: 160px;
+  width: 100%;
+  margin-top: 40px;
+}
+
 .info--side .now {
   color: #0057FF;
+}
+
+.info--side-tab2 {
+  display: none;
+}
+
+.info--side-tab2.open {
+  display: block;
+}
+
+.info--wrap-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .info--wrap-title-text01 {
   font-size: 32px;
   letter-spacing: -0.02em;
   font-weight: 600;
+  margin-top: 13px;
 }
 
 .info--wrap-title-text02 {
@@ -210,15 +259,17 @@ a.info--side-last-button {
 }
 
 .info--wrap-body-row-inputRow-atMark {
-  position: absolute;
-  top: 50%;
-  right: 0;
-  -webkit-transform: translate(100%, -50%);
-          transform: translate(100%, -50%);
   padding: 0 4px;
   font-size: 15px;
   color: #121619;
   font-weight: 500;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: -12px;
 }
 
 .info--wrap-body-row-inputRow-title {
@@ -263,8 +314,8 @@ a.info--side-last-button {
 .info--wrap-body-row-inputRow-input-relative {
   position: relative;
   opacity: 1;
-  padding: 18px 12px 20px;
-  font-size: 16px;
+  padding: 19px 12px;
+  font-size: 14px;
   color: #121619;
 }
 
@@ -375,9 +426,10 @@ a.info--side-last-button {
   display: block;
   text-align: center;
   cursor: pointer;
-  border: 1px solid #0057FF;
-  color: #0057FF;
+  border: 1px solid #121619;
+  color: #fff;
   border-radius: 6px;
+  background-color: #121619;
 }
 
 .info--wrap-body-row-inputRow-exp {
@@ -416,7 +468,7 @@ a.info--side-last-button {
 
 .info--input-first {
   width: calc(100% - 10px);
-  margin-right: 20px;
+  margin-right: 12px;
 }
 
 .input--wrap-body-row-inputRow-filePath {
@@ -454,6 +506,23 @@ a.info--side-last-button {
 
 .no-border {
   border: unset;
+}
+
+@media all and (max-width: 1024px) {
+  .info--container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0;
+  }
+  .info--side {
+    max-width: unset;
+    padding-top: 0;
+  }
+  .info--wrap {
+    padding-left: 40px;
+  }
 }
 
 .info--wrap-etc-search {
@@ -527,7 +596,8 @@ a.info--side-last-button {
 }
 
 .info--wrap-body2 {
-  padding-top: 100px;
+  padding-top: 103px;
+  overflow: hidden;
 }
 
 .info--wrap-body2-boardListItem {
@@ -610,7 +680,7 @@ a.info--side-last-button {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  border-radius: 16px;
+  border-radius: 50px;
   border-width: 1px;
   border-style: solid;
   padding: 8px 0;
@@ -772,6 +842,30 @@ a.info--side-last-button {
           justify-content: space-between;
   padding: 16px 0;
   border-bottom: 1px solid #dddddd;
+}
+
+.info--wrap-body2-arrowRight {
+  width: 60px;
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.info--wrap-body2-arrowRight span {
+  width: 9px;
+  height: 9px;
+  display: block;
+  border: solid #121619;
+  border-width: 0 1px 1px 0;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 
 .info--wrap-body2a-body {
@@ -1011,5 +1105,94 @@ a.info--side-last-button {
   border: 1px solid #dddddd;
   color: #656A71;
   background-color: #fff;
+}
+
+.info--wrap-body2-table {
+  width: 100%;
+  overflow-x: scroll;
+}
+
+.info--wrap-body2-table::-webkit-scrollbar-thumb {
+  background-color: #dddddd;
+  border-radius: 6px;
+}
+
+.info--wrap-body2-table::-webkit-scrollbar {
+  background-color: #fff;
+  height: 8px;
+}
+
+.info--wrap-body2-tableWrap {
+  min-width: 800px;
+}
+
+.info--wrap-body2-table-class {
+  border-bottom: 2px solid #121619;
+  padding: 17px 0;
+}
+
+.info--wrap-body2-table-class,
+.info--wrap-body2-table-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.info--wrap-body2-table-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 23px 0;
+  border-bottom: 1px solid #dddddd;
+}
+
+.info--wrap-body2-table-row p {
+  font-size: 14px;
+}
+
+.info--wrap-body2-table-class p {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.info--wrap-body2-table-class p,
+.info--wrap-body2-table-row p {
+  text-align: center;
+}
+
+.info--wrap-body2-table-class p:nth-child(1),
+.info--wrap-body2-table-row p:nth-child(1) {
+  width: 110px;
+}
+
+.info--wrap-body2-table-class p:nth-child(2),
+.info--wrap-body2-table-row p:nth-child(2) {
+  width: 140px;
+}
+
+.info--wrap-body2-table-class p:nth-child(3),
+.info--wrap-body2-table-row p:nth-child(3) {
+  width: 122px;
+}
+
+.info--wrap-body2-table-class p:nth-child(4),
+.info--wrap-body2-table-row p:nth-child(4) {
+  width: 130px;
+}
+
+.info--wrap-body2-table-class p:nth-child(5),
+.info--wrap-body2-table-row p:nth-child(5) {
+  width: 100px;
+}
+
+.info--wrap-body2-table-class p:nth-child(6),
+.info--wrap-body2-table-row p:nth-child(6) {
+  width: 200px;
 }
 /*# sourceMappingURL=info.css.map */

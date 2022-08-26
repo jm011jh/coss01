@@ -88,6 +88,16 @@
   letter-spacing: -0.2px;
 }
 
+.input-subject-title span {
+  width: 4px;
+  height: 4px;
+  display: block;
+  background-color: #FF003B;
+  margin-left: 4px;
+  -webkit-transform: translate(0, -100%);
+          transform: translate(0, -100%);
+}
+
 .input-row {
   display: -webkit-box;
   display: -ms-flexbox;

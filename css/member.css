@@ -28,7 +28,14 @@
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+}
+
+.input-row4 .input-subject-title p {
   padding-top: 14px;
+}
+
+.input-row4 .input-subject-title span {
+  margin-top: 18px;
 }
 
 .input-box2 {
@@ -52,7 +59,7 @@
 }
 
 .input-box {
-  padding: 12px;
+  padding: 19px 12px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -75,7 +82,7 @@
   border: none;
   border-radius: 0px;
   width: 100%;
-  padding: 4px 4px;
+  line-height: 1;
 }
 
 .input-box input:focus {
@@ -95,6 +102,7 @@
   font-size: 12px;
   color: #aaaaaa;
   padding-left: 4px;
+  display: none;
 }
 
 .input-box.focused {

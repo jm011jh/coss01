@@ -20,6 +20,7 @@ $white : #dddddd;
 .input--section-title span{font-size: 14px;color: $red;position: relative;font-weight: 500;}
 .input--section-title span::after{content: '';position: absolute;top: 50%;left: -8px;transform: translate(-50%,-50%);display: block;width: 6px;height: 6px;background-color: $red;border-radius: 50%;line-height: 1;}
 .input-subject-title{min-width: 104px;margin-right: 20px;display: flex;align-items: center;font-size: 15px;font-weight: 400;letter-spacing: -0.2px;}
+.input-subject-title span{width: 4px;height:4px;display: block;background-color: $red;margin-left: 4px;transform: translate(0,-100%);}
 
 .input-row{display: flex;width: 100%;}
 .input-row2{display: flex;width: 100%;}

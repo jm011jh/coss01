@@ -13,14 +13,14 @@
         <a href="" class="info--side-text2">부스 컨텐츠 관리</a>
     </div>
     <div class="info--side-tab1">
-        <a href="" class="info--side-text2">부스 커뮤니티</a>
+        <p class="info--side-text2 info--side-tabOpen">부스 커뮤니티</p>
         <div class="info--side-tab2">
             <a class="info--side-text3" href="">문의내역</a>
             <a class="info--side-text3" href="">방문객명단</a>
         </div>
     </div>
     <div class="info--side-tab1">
-        <a href="" class="info--side-text2">부스 통계</a>
+        <p class="info--side-text2 info--side-tabOpen">부스 통계</p>
         <div class="info--side-tab2">
             <a class="info--side-text3" href="">방문통계</a>
             <a class="info--side-text3" href="">성별</a>
@@ -36,3 +36,17 @@
         <a href="" class="info--side-last-button">내 부스 보기</a>
     </div>
 </div>
+<script>
+    const infoSideTabOpen = document.querySelectorAll(".info--side-tabOpen")
+    infoSideTabOpen.forEach(function(el){
+        let parent = el.closest(".info--side-tab1")
+        let tab2 = parent.querySelector(".info--side-tab2")
+        el.addEventListener("click",function(){
+            if(tab2.classList.contains("open")){
+                tab2.classList.remove("open")
+            }else{
+                tab2.classList.add("open")
+            }
+        })
+    })
+</script>

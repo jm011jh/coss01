@@ -13,14 +13,16 @@ $grey01 : #959aa0;
 .member--title p.fontSize01{font-weight: 700;margin-bottom: 18px;letter-spacing: -0.2px;}
 .member--title p.fontSize02{color: $slateGrey;letter-spacing: -0.25px;}
 
-.input-row4 .input-subject-title{align-items: flex-start;padding-top: 14px;}
+.input-row4 .input-subject-title{align-items: flex-start;}
+.input-row4 .input-subject-title p{padding-top: 14px;}
+.input-row4 .input-subject-title span{margin-top: 18px;}
 .input-box2{padding: 12px;display: flex;flex-direction: column;justify-content: flex-start;align-items: flex-start;border: 1px solid $white;border-radius: 6px;position:relative;}
-.input-box{padding: 12px;display: flex;flex-direction: column;justify-content: flex-start;align-items: flex-start;border: 1px solid $white;border-radius: 6px;position:relative;
-    input{border: none;border-radius: 0px;width: 100%;padding: 4px 4px;}
+.input-box{padding: 19px 12px;display: flex;flex-direction: column;justify-content: flex-start;align-items: flex-start;border: 1px solid $white;border-radius: 6px;position:relative;
+    input{border: none;border-radius: 0px;width: 100%;line-height: 1;}
     input:focus{border: 0px solid $dark;outline: none;}
     input:active{border: none;}
     input, .input-box label{display: block;}
-    label{font-size: 12px;color: #aaaaaa;padding-left: 4px;}
+    label{font-size: 12px;color: #aaaaaa;padding-left: 4px;display: none;}
 }
 .input-box.focused{border: 1px solid $blue;}
 .input-box1.focused{border: 1px solid $blue;}
