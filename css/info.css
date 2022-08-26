@@ -33,6 +33,7 @@ input {
 
 .info--side a {
   display: block;
+  line-height: 1;
 }
 
 .info--side-tab1 p {
@@ -55,39 +56,20 @@ input {
   font-weight: 600;
 }
 
-a.info--side-text2 {
-  padding: 13px 0;
-  color: #121619;
-}
-
+a.info--side-text2,
 p.info--side-text2 {
   padding: 13px 0;
   color: #121619;
 }
 
-a.info--side-text3 {
-  padding: 11px 0;
-  color: #656A71;
-}
-
+a.info--side-text3,
 p.info--side-text3 {
   padding: 11px 0;
   color: #656A71;
+  font-weight: 500;
 }
 
-a.info--side-last-button {
-  color: #0057FF;
-  border: 1px solid #0057FF;
-  padding: 19px 0;
-  text-align: center;
-  border-radius: 6px;
-  font-size: 16px;
-  font-weight: 600;
-  max-width: 160px;
-  width: 100%;
-  margin-top: 40px;
-}
-
+a.info--side-last-button,
 p.info--side-last-button {
   color: #0057FF;
   border: 1px solid #0057FF;
@@ -111,6 +93,73 @@ p.info--side-last-button {
 
 .info--side-tab2.open {
   display: block;
+}
+
+@media all and (max-width: 1024px) {
+  .info--container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0;
+  }
+  .info--side {
+    max-width: unset;
+    padding-top: 0;
+  }
+  .info--container {
+    overflow: hidden;
+  }
+  .info--wrap {
+    width: 100%;
+    padding: 0 40px;
+    margin-top: 80px;
+  }
+  .info--side {
+    overflow: hidden;
+    padding-bottom: 0px;
+    overflow: scroll;
+  }
+  .info--side-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    min-width: 480px;
+  }
+  .info--side::-webkit-scrollbar {
+    display: none;
+  }
+  .info--side-text1 {
+    display: none;
+  }
+  a.info--side-text2,
+  p.info--side-text2 {
+    padding: 13px 0;
+    color: #959aa0;
+    font-size: 14px;
+  }
+  .info--side .now {
+    color: #121619;
+    font-weight: 800;
+  }
+  .info--side-tab1:not(:nth-child(2)) {
+    margin-left: 20px;
+  }
+}
+
+@media all and (max-width: 767px) {
+  .info--container {
+    margin-top: 60px;
+  }
+}
+
+@media all and (max-width: 480px) {
+  .info--wrap {
+    padding: 0 20px;
+  }
 }
 
 .info--wrap-title {
@@ -372,7 +421,7 @@ p.info--side-last-button {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 18px 12px 20px;
+  padding: 18px 40px 20px 12px;
   position: relative;
   cursor: pointer;
   font-weight: 500;
@@ -508,20 +557,56 @@ p.info--side-last-button {
   border: unset;
 }
 
-@media all and (max-width: 1024px) {
-  .info--container {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    padding: 0;
+@media all and (max-width: 767px) {
+  .info--wrap-body-row-inputRow {
+    font-size: 14px;
   }
-  .info--side {
+  .info--wrap-body-row-inputRow {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .info--wrap-body-row-inputRow-title {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 12px;
+    font-size: 14px;
+  }
+  .info--wrap-body-row-inputRow-input-relative {
+    font-size: 13px;
+    padding: 14px 10px;
+  }
+  .info--wrap-body-row-inputRow-listItem {
+    padding: 14px 10px;
+  }
+  .info--wrap-body-row-inputRow-selectButton {
+    padding: 14px 10px;
+  }
+  .info--input-first {
+    margin: 0;
+    margin-bottom: 12px;
+  }
+  .input-box100 {
+    max-width: 100px;
+  }
+  .input-box200 {
+    max-width: 188px;
+  }
+  .input-box300 {
     max-width: unset;
-    padding-top: 0;
   }
-  .info--wrap {
-    padding-left: 40px;
+  .input-box400 {
+    max-width: unset;
+  }
+  .input-box700 {
+    max-width: 708px;
+  }
+  .info--wrap-body-row-inputRow-fileUploadButton {
+    padding: 12px 0;
+    font-size: 12px;
+  }
+  .info--wrap-body-row-content {
+    padding-top: 24px;
+    padding-bottom: 40px;
   }
 }
 
@@ -1154,6 +1239,7 @@ p.info--side-last-button {
 
 .info--wrap-body2-table-row p {
   font-size: 14px;
+  font-weight: 500;
 }
 
 .info--wrap-body2-table-class p {

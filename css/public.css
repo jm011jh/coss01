@@ -196,7 +196,6 @@ p {
 
 .header--menu {
   font-size: 18px;
-  font-weight: 500;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -214,6 +213,7 @@ p {
 
 .header--menu a {
   padding: 20px;
+  font-weight: 600;
 }
 
 #memberIcon {
@@ -231,13 +231,23 @@ p {
   font-weight: 400;
 }
 
-.header--member {
-  margin-right: 12px;
+.header--member a {
+  width: 52px;
+  height: 52px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .header--member svg {
-  width: 32px;
-  height: 32px;
+  width: 18px;
+  height: 19px;
 }
 
 .header--ham {
@@ -247,6 +257,12 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 52px;
+  height: 52px;
+  cursor: pointer;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .header--ham-text {
@@ -280,8 +296,93 @@ p {
           transform: translate(0, -100%);
 }
 
+.header--mybooth {
+  margin-right: 20px;
+}
+
+.header--mybooth a {
+  color: #0057FF;
+  border: 1px solid #0057FF;
+  border-radius: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  height: 36px;
+  font-size: 14px;
+  font-weight: 600;
+  width: 100px;
+}
+
+@media all and (max-width: 1500px) {
+  .header--menu {
+    position: relative;
+    top: unset;
+    left: unset;
+    -webkit-transform: unset;
+            transform: unset;
+  }
+}
+
+@media all and (max-width: 1280px) {
+  .header--menu {
+    font-size: 16px;
+  }
+  .header--menu a {
+    padding: 20px 12px;
+  }
+  .header--mybooth {
+    margin-right: 10px;
+  }
+  .header--member a,
+  .header--ham {
+    width: 44px;
+  }
+}
+
+@media all and (max-width: 1024px) {
+  .header--menu {
+    display: none;
+  }
+}
+
+@media all and (max-width: 767px) {
+  .header--wrap {
+    padding: 4px 12px 4px 20px;
+  }
+  .header--logo {
+    padding: 0;
+  }
+  .header--member svg {
+    width: 13.5px;
+    height: 14px;
+  }
+  .header--ham-button {
+    width: 18px;
+    height: 12px;
+  }
+  .header--member a,
+  .header--ham {
+    width: 32px;
+    height: 32px;
+  }
+  .header--mybooth a {
+    width: 90px;
+    font-size: 13px;
+    height: 32px;
+  }
+}
+
 #footer {
   background-color: #fbfbfb;
+  width: 100%;
+  overflow: hidden;
 }
 
 .footer--wrap {

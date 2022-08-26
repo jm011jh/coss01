@@ -26,3 +26,5 @@ board2a.html
 게시물에 답변이 없을 시 .info--wrap-body2a-foot-buttonWrap 안의 '답변하기'버튼을 활성화해주세요.
 또한 해당 버튼을 클릭할 경우 .info--wrap-body2a-foot-buttonWrap는 잠시 없애고 .info--wrap-body2a-foot-form를 나타나게 해주세요.
 게시물에 답변이 없을 시 .info--wrap-body2a-reply는 없애주세요
+
+infoSide.html의 메뉴 중 해당 메뉴로 이동한 경우 해당 a요소에 now 클래스를 부여해주세요.

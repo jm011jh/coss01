@@ -14,21 +14,40 @@ input{outline: none;border: unset;background-color:unset;}
 
 .info--wrap{width: calc(100% - 208px);max-width: 1020px;margin:0 auto;padding:67px 0 80px;padding-left: 104px;}
 .info--side{width: 100%;max-width: 208px;padding: 80px 12px;border-right: 1px solid $paleGrey;}
-.info--side a{display: block;}
+.info--side a{display: block;line-height: 1;}
 .info--side-tab1 p{cursor: pointer;}
 .info--side-text1{font-size: 24px;font-weight: 600;margin-bottom: 20px;}
 .info--side-text2{font-size: 18px;font-weight: 600;}
 .info--side-text3{font-size: 16px;font-weight: 600;}
-a.info--side-text2{padding: 13px 0;color: $dark;}
+a.info--side-text2,
 p.info--side-text2{padding: 13px 0;color: $dark;}
-a.info--side-text3{padding: 11px 0;color: $slateGrey;}
-p.info--side-text3{padding: 11px 0;color: $slateGrey;}
-a.info--side-last-button{color: $blue;border: 1px solid $blue;padding: 19px 0;text-align: center;border-radius: 6px;font-size: 16px;font-weight: 600;max-width: 160px;width: 100%;margin-top: 40px;}
+a.info--side-text3,
+p.info--side-text3{padding: 11px 0;color: $slateGrey;font-weight: 500;}
+a.info--side-last-button,
 p.info--side-last-button{color: $blue;border: 1px solid $blue;padding: 19px 0;text-align: center;border-radius: 6px;font-size: 16px;font-weight: 600;max-width: 160px;width: 100%;margin-top: 40px;}
 .info--side .now{color: $blue;}
 .info--side-tab2{display: none;}
 .info--side-tab2.open{display: block;}
-
+@media all and (max-width:1024px){
+    .info--container{flex-direction: column;padding: 0;}
+    .info--side{max-width: unset;padding-top: 0;}
+    .info--container{overflow: hidden;}
+    .info--wrap{width: 100%;padding: 0 40px;margin-top: 80px;}
+    .info--side{overflow: hidden;padding-bottom: 0px;overflow: scroll;}
+    .info--side-wrap{display: flex;justify-content: center;min-width: 480px;}
+    .info--side::-webkit-scrollbar{display: none;}
+    .info--side-text1{display: none;}
+    a.info--side-text2,
+    p.info--side-text2{padding: 13px 0;color: $coolGrey;font-size: 14px;}
+    .info--side .now{color: $dark;font-weight: 800;}
+    .info--side-tab1:not(:nth-child(2)){margin-left: 20px;}
+}
+@media all and (max-width:767px){
+    .info--container{margin-top: 60px;}
+}
+@media all and (max-width:480px){
+    .info--wrap{padding: 0 20px;}
+}
 .info--wrap-title{display: flex;flex-direction: column;justify-content: flex-end;}
 .info--wrap-title-text01{font-size: 32px;letter-spacing: -0.02em;font-weight: 600;margin-top: 13px;}
 .info--wrap-title-text02{font-size: 16px;letter-spacing: -0.02em;color: $slateGrey;margin-top: 0.5em;font-weight: 500;}
@@ -65,7 +84,7 @@ p.info--side-last-button{color: $blue;border: 1px solid $blue;padding: 19px 0;te
 .info--wrap-body-row-inputRow textarea:focus{border: 0px solid $dark;outline: none;}
 .info--wrap-body-row-inputRow textarea::placeholder{color:$greyish}
 
-.info--wrap-body-row-inputRow-selectButton{display: flex;justify-content: space-between;padding: 18px 12px 20px;position: relative;cursor: pointer;font-weight: 500;}
+.info--wrap-body-row-inputRow-selectButton{display: flex;justify-content: space-between;padding: 18px 40px 20px 12px;position: relative;cursor: pointer;font-weight: 500;}
 .info--wrap-body-row-inputRow-selectButton span{   width: 9px;height: 9px;border: solid #A8B2bF;border-width: 0 2px 2px 0;position: absolute;top: 50%;right: 18px;transform: translate(0, -75%) rotate(45deg);}
 .info--wrap-body-row-inputRow-list{position: absolute;border: 1px solid $white;width: calc(100% + 2px);left: -1px;border-radius: 6px;background-color: #fff;top: -1px;z-index: 55;}
 .info--wrap-body-row-inputRow-list{display: none;}
@@ -88,11 +107,21 @@ p.info--side-last-button{color: $blue;border: 1px solid $blue;padding: 19px 0;te
 
 .no-border{border: unset;}
 
-
-@media all and (max-width:1024px){
-    .info--container{flex-direction: column;padding: 0;}
-    .info--side{max-width: unset;padding-top: 0;}
-    .info--wrap{padding-left: 40px;}
+@media all and (max-width:767px){
+    .info--wrap-body-row-inputRow{font-size: 14px;}
+    .info--wrap-body-row-inputRow{flex-wrap: wrap;}
+    .info--wrap-body-row-inputRow-title{width: 100%;margin: 0;margin-bottom: 12px;font-size: 14px;}
+    .info--wrap-body-row-inputRow-input-relative{font-size: 13px;padding: 14px 10px;}
+    .info--wrap-body-row-inputRow-listItem{padding: 14px 10px;}
+    .info--wrap-body-row-inputRow-selectButton{padding: 14px 10px;}
+    .info--input-first{margin: 0;margin-bottom: 12px;}
+    .input-box100{max-width: 100px;}
+    .input-box200{max-width: 188px;}
+    .input-box300{max-width: unset;}
+    .input-box400{max-width: unset;}
+    .input-box700{max-width: 708px;}
+    .info--wrap-body-row-inputRow-fileUploadButton{padding: 12px 0;font-size: 12px;}
+    .info--wrap-body-row-content{padding-top: 24px;padding-bottom: 40px;}
 }
 // for board
 
@@ -194,7 +223,7 @@ p.info--side-last-button{color: $blue;border: 1px solid $blue;padding: 19px 0;te
 .info--wrap-body2-table-class,
 .info--wrap-body2-table-row{display: flex;justify-content: space-between;}
 .info--wrap-body2-table-row{display: flex;justify-content: space-between;padding: 23px 0;border-bottom: 1px solid $white;}
-.info--wrap-body2-table-row p{font-size: 14px;}
+.info--wrap-body2-table-row p{font-size: 14px;font-weight: 500;}
 .info--wrap-body2-table-class p{font-size: 16px;font-weight: 600;}
 .info--wrap-body2-table-class p,
 .info--wrap-body2-table-row p{text-align: center;}
